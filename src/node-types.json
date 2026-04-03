@@ -1,0 +1,92 @@
+[
+  {
+    "type": "base_type",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "keyword",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "base_type",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "other",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Bool",
+    "named": false
+  },
+  {
+    "type": "Nat",
+    "named": false
+  },
+  {
+    "type": "endfm",
+    "named": false
+  },
+  {
+    "type": "endm",
+    "named": false
+  },
+  {
+    "type": "eq",
+    "named": false
+  },
+  {
+    "type": "fmod",
+    "named": false
+  },
+  {
+    "type": "identifier",
+    "named": true
+  },
+  {
+    "type": "is",
+    "named": false
+  },
+  {
+    "type": "mod",
+    "named": false
+  },
+  {
+    "type": "op",
+    "named": false
+  },
+  {
+    "type": "other",
+    "named": true
+  },
+  {
+    "type": "rl",
+    "named": false
+  },
+  {
+    "type": "sort",
+    "named": false
+  }
+]
