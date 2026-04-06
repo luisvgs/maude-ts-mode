@@ -15,7 +15,19 @@
       "members": [
         {
           "type": "SYMBOL",
+          "name": "module_entry"
+        },
+        {
+          "type": "SYMBOL",
           "name": "keyword"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "op_attr"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "base_type"
         },
         {
           "type": "SYMBOL",
@@ -24,10 +36,34 @@
         {
           "type": "SYMBOL",
           "name": "other"
+        }
+      ]
+    },
+    "module_entry": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "module_type"
         },
         {
           "type": "SYMBOL",
-          "name": "base_type"
+          "name": "identifier"
+        },
+        {
+          "type": "STRING",
+          "value": "is"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_token"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "module_end"
         }
       ]
     },
@@ -36,19 +72,15 @@
       "members": [
         {
           "type": "STRING",
-          "value": "fmod"
+          "value": "including"
         },
         {
           "type": "STRING",
-          "value": "endfm"
+          "value": "pr"
         },
         {
           "type": "STRING",
-          "value": "mod"
-        },
-        {
-          "type": "STRING",
-          "value": "endm"
+          "value": "protecting"
         },
         {
           "type": "STRING",
@@ -57,6 +89,10 @@
         {
           "type": "STRING",
           "value": "sort"
+        },
+        {
+          "type": "STRING",
+          "value": "sorts"
         },
         {
           "type": "STRING",
@@ -69,6 +105,61 @@
         {
           "type": "STRING",
           "value": "is"
+        },
+        {
+          "type": "STRING",
+          "value": "var"
+        },
+        {
+          "type": "STRING",
+          "value": "vars"
+        }
+      ]
+    },
+    "op_attr": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "assoc"
+        },
+        {
+          "type": "STRING",
+          "value": "comm"
+        }
+      ]
+    },
+    "module_type": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "fmod"
+        },
+        {
+          "type": "STRING",
+          "value": "omod"
+        },
+        {
+          "type": "STRING",
+          "value": "mod"
+        }
+      ]
+    },
+    "module_end": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "endfm"
+        },
+        {
+          "type": "STRING",
+          "value": "endm"
+        },
+        {
+          "type": "STRING",
+          "value": "endom"
         }
       ]
     },
@@ -81,7 +172,39 @@
         },
         {
           "type": "STRING",
+          "value": "NAT"
+        },
+        {
+          "type": "STRING",
           "value": "Bool"
+        },
+        {
+          "type": "STRING",
+          "value": "BOOL"
+        },
+        {
+          "type": "STRING",
+          "value": "FLOAT"
+        },
+        {
+          "type": "STRING",
+          "value": "Float"
+        },
+        {
+          "type": "STRING",
+          "value": "STRING"
+        },
+        {
+          "type": "STRING",
+          "value": "String"
+        },
+        {
+          "type": "STRING",
+          "value": "INT"
+        },
+        {
+          "type": "STRING",
+          "value": "Int"
         }
       ]
     },

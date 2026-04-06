@@ -10,6 +10,64 @@
     "fields": {}
   },
   {
+    "type": "module_end",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "module_entry",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "base_type",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "module_end",
+          "named": true
+        },
+        {
+          "type": "module_entry",
+          "named": true
+        },
+        {
+          "type": "module_type",
+          "named": true
+        },
+        {
+          "type": "op_attr",
+          "named": true
+        },
+        {
+          "type": "other",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "module_type",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "op_attr",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "source_file",
     "named": true,
     "root": true,
@@ -31,6 +89,14 @@
           "named": true
         },
         {
+          "type": "module_entry",
+          "named": true
+        },
+        {
+          "type": "op_attr",
+          "named": true
+        },
+        {
           "type": "other",
           "named": true
         }
@@ -38,11 +104,51 @@
     }
   },
   {
+    "type": "BOOL",
+    "named": false
+  },
+  {
     "type": "Bool",
     "named": false
   },
   {
+    "type": "FLOAT",
+    "named": false
+  },
+  {
+    "type": "Float",
+    "named": false
+  },
+  {
+    "type": "INT",
+    "named": false
+  },
+  {
+    "type": "Int",
+    "named": false
+  },
+  {
+    "type": "NAT",
+    "named": false
+  },
+  {
     "type": "Nat",
+    "named": false
+  },
+  {
+    "type": "STRING",
+    "named": false
+  },
+  {
+    "type": "String",
+    "named": false
+  },
+  {
+    "type": "assoc",
+    "named": false
+  },
+  {
+    "type": "comm",
     "named": false
   },
   {
@@ -51,6 +157,10 @@
   },
   {
     "type": "endm",
+    "named": false
+  },
+  {
+    "type": "endom",
     "named": false
   },
   {
@@ -66,11 +176,19 @@
     "named": true
   },
   {
+    "type": "including",
+    "named": false
+  },
+  {
     "type": "is",
     "named": false
   },
   {
     "type": "mod",
+    "named": false
+  },
+  {
+    "type": "omod",
     "named": false
   },
   {
@@ -82,11 +200,31 @@
     "named": true
   },
   {
+    "type": "pr",
+    "named": false
+  },
+  {
+    "type": "protecting",
+    "named": false
+  },
+  {
     "type": "rl",
     "named": false
   },
   {
     "type": "sort",
+    "named": false
+  },
+  {
+    "type": "sorts",
+    "named": false
+  },
+  {
+    "type": "var",
+    "named": false
+  },
+  {
+    "type": "vars",
     "named": false
   }
 ]
